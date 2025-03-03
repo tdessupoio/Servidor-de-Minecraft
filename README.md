@@ -127,6 +127,8 @@ Agora, é só criar um novo servidor dentro do Crafty, definindo:
 Configura a memoria ram dependendo do seu server
 Agora ele vai baixar as informações do servidor da Microsoft / Mojang
 
+![image](https://github.com/user-attachments/assets/f3bfb7df-3caa-4672-a854-11b1884b1e26)
+
 ![image](https://github.com/user-attachments/assets/5407af63-4926-4051-8cfc-ecb7a723fc5c)
 
 Caso apareça erro de Java, instale o Java 21:
