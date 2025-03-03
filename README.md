@@ -52,4 +52,77 @@ Eu vou seguir o passo a passo que ele tem no git hub mesmo:
 
 https://docs.craftycontrol.com/pages/getting-started/installation/linux/
 
+Finalizando os passos, vai dar uma sequência de solicitações para você aceitar.
+![image](https://github.com/user-attachments/assets/50a246ed-5017-4d44-b3a6-d0674164a23d)
+![image](https://github.com/user-attachments/assets/91579dfe-73fe-4723-847a-321cda023a61)
+![image](https://github.com/user-attachments/assets/d6a48883-697a-4934-8055-2ff3f3fc0f79)
+![image](https://github.com/user-attachments/assets/d0515162-b11d-4db0-9864-6d28b7103e84)
+(Nesse caso ele esta criando um serviço como se fosse no windowns, para não precisarmos iniciar sempre, vai iniciar sozinho)
+Você vai seguir colocando os comandos que ele pede para criar o serviço
 
+Fazemos login como esta especificado no documento:
+https://docs.craftycontrol.com/pages/getting-started/access/
+Colocamos o ip do server e a porta.
+No meu caso foi:
+
+````
+https://192.168.0.15:8443
+
+````
+Agora esta rodando o crafty
+![image](https://github.com/user-attachments/assets/3ac324a6-9d7b-4300-9441-3c5c387e46b4)
+
+Você vai jogar esse comando no seu server ou ssh:
+````
+sudo cat /var/opt/minecraft/crafty/crafty-4/app/config/default-creds.txt
+````
+Com isso ele vai buscar qual usuario e senha foi criado para você.
+
+![image](https://github.com/user-attachments/assets/e0010d40-f854-4da9-a05a-5b7c44974426)
+
+Agora você vai em create new server
+Server Type - Minecraft Servers
+Server select - se vai ser vanila ou com Sistemas de mod
+Server version - a versão do Minecraft
+Server name - o nome que você quer deixar no Crafty
+
+Configura a memoria ram dependendo do seu server
+Agora ele vai baixar as informações do servidor da microsoft / mojang
+
+![image](https://github.com/user-attachments/assets/5407af63-4926-4051-8cfc-ecb7a723fc5c)
+ja podemos estartar o nosso servidor
+Caso aparece algum erro de Java, aconselho fazer a instalação do Java 21 no server:
+
+````
+sudo apt install openjdk-21-jdk
+````
+Após o carregando do crafty, é apenas entrar no seu servidor com o ip do server e correr para o abraço kkk
+
+Consideração se quiser que rode jogadores com o Minecraft pirata, é necessario ir em files e trocar uma configuração do server:
+![image](https://github.com/user-attachments/assets/23115fe9-19a4-4369-b5ac-d3cd8265c6ab)
+Se deixar True so funcionar Minecraft original.
+(lembrando no false, se alguem entrar com o mesmo nome de algum usuario, ele vai ficar com os itens do usuario, precisará colocar algum plugin de autenticação para reverter essa parte)
+
+
+Beleza, seu server ja ta funcionando em modo local. Eu quero abrir de forma Não local, o que fazer? 
+Ai ja engrossa mais o angu.
+
+Primeira opção:
+Vai no site meuip: https://meuip.com.br/
+E vai nas configurações do seu roteador, Public IPv4 Address para verificar a Wan
+Se estiver o mesmo IP, você consegue apenas abrir uma porta para o seu servidor e show de bola. Porque esta direto na sua companhia de internet.
+Se os ips forem diferentes, você está no CGNAT -  Carrier-grade NAT
+![image](https://github.com/user-attachments/assets/88d40e00-29a9-444b-bc1a-af14a96182be)
+
+Como podemos ver na imagem, estamos(meu caso também) em um roteador onde é dividida com outras casas e depois vamos para o acesso da internet.
+Bom o que você pode fazer, é: Criar uma VPN, usar o Hamashi, Playit.gg e diversas formas, ate mesmo verificar se a companhia de internet consegue fazer a ligação direta na internet(entre nós, não vão querer kkk).
+No meu caso, criei uma conta no playit.gg porque queria começar a jogar logo. 
+
+No playit para você criar um endereço de server totalmente customizado, precisa pagar um plano. Mas eu deixei quieto e utilizei a versão de graça onde vem um endereço proprio deles.
+No site é muito facil vincular, você vai fazer a instalação do plugin e jogar na pasta plugin do Crafty. Quando você iniciar o server, vai te dar um url para fazer seu login e configurar o caminho. 
+![image](https://github.com/user-attachments/assets/b648a41e-3d1c-45ee-ad6e-e4e5d9fac383)
+![image](https://github.com/user-attachments/assets/56685a79-aa7b-4ea0-b552-1b9e322c2952)
+
+Coloca o endereço no minecraft e pronto. 
+
+Agora você tem um servidor de minecraft!!!
