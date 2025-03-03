@@ -4,7 +4,7 @@ Este repositório documenta o passo a passo de como configurei um servidor de Mi
 
 Bom, amigos, eu estava com um tempo ocioso em casa e resolvi realizar um sonho de infância que também vai me ajudar em projetos futuros: criei um servidor de Minecraft.
 
-##Escolhendo a Máquina##
+## Escolhendo a Máquina
 
 O primeiro passo foi decidir em qual máquina rodar o servidor. Por sorte, eu tinha meu primeiro notebook, uma verdadeira bomba:
 
@@ -16,7 +16,7 @@ O primeiro passo foi decidir em qual máquina rodar o servidor. Por sorte, eu ti
 
 Eu tentava usar esse notebook no curso técnico, mas era um verdadeiro teste de paciência, tanto que eu preferia usar o celular.
 
-##Melhorando o Notebook##
+## Melhorando o Notebook
 
 A segunda etapa foi tentar melhorar esse notebook de alguma forma. Eu tinha um outro laptop comprado com defeito para consertar e vi o que poderia aproveitar:
 
@@ -30,11 +30,11 @@ A segunda etapa foi tentar melhorar esse notebook de alguma forma. Eu tinha um o
 
 Depois de tudo instalado, liguei a máquina e, para minha felicidade, tudo estava funcionando bem!
 
-##Criando um Pendrive Bootável##
+## Criando um Pendrive Bootável
 
 Para instalar o sistema operacional do servidor, criei um pendrive bootável e optei pelo **Ubuntu Server**, pois é fácil de instalar e configurar. Usei o **Ventoy** para criar o pendrive bootável, pois já uso esse programa há um tempo e gosto bastante.
 
-##Instalando o Ubuntu Server##
+## Instalando o Ubuntu Server
 
 Conectei o pendrive e inicie a instalação:
 
@@ -53,7 +53,7 @@ Conectei o pendrive e inicie a instalação:
 6. Defini o **nome do servidor, usuário e senha.**
 ![image](https://github.com/user-attachments/assets/4d0eeba8-4e35-4903-b1c1-c5bb7175846d)
 
-##Instalando o OpenSSH##
+## Instalando o OpenSSH
 
 Durante a instalação, ativei a opção de instalar o **OpenSSH Server**, pois todas as configurações serão feitas remotamente, a partir do meu PC principal.
 ![image](https://github.com/user-attachments/assets/bdc50df8-e036-43a2-8be3-79f895511a28)
@@ -61,7 +61,7 @@ Durante a instalação, ativei a opção de instalar o **OpenSSH Server**, pois 
 Não vamos instalar com nenhuma autenticidade, para instalar ja funcionando.
 E agora começou a instalação!!!
 
-##Acessando o Servidor via SSH##
+## Acessando o Servidor via SSH
 
 Com o Ubuntu Server instalado, fiz login e instalei algumas ferramentas úteis:
 
@@ -82,7 +82,7 @@ ssh (usuario@ipdoserver)
 ````
 Ele pediu confirmação de segurança e a senha do usuário. Com isso, a conexão estava estabelecida!
 
-##Instalando o Crafty Controller##
+## Instalando o Crafty Controller
 
 O **Crafty Controller** é um excelente programa para gerenciar servidores de Minecraft. Segui o passo a passo da documentação oficial:
 [Instalação do Crafty](https://docs.craftycontrol.com/pages/getting-started/installation/linux/)
@@ -131,7 +131,7 @@ sudo apt install openjdk-21-jdk
 ````
 Após o carregamento, basta entrar no servidor via IP e jogar!
 
-##Permitindo Jogadores com Minecraft Pirata##
+## Permitindo Jogadores com Minecraft Pirata
 
 Se quiser permitir jogadores com versão alternativa do Minecraft, altere a configuração do server.properties:
 ![image](https://github.com/user-attachments/assets/23115fe9-19a4-4369-b5ac-d3cd8265c6ab)
@@ -142,7 +142,8 @@ online-mode=false
 Se deixar True so funcionar Minecraft original.
 **Atenção**: Com essa opção ativada, qualquer jogador pode entrar com o nome de outro, pegando seus itens. Recomendo instalar um plugin de autenticação para evitar problemas.
 
-##Abertura do Servidor para Jogadores Externos##
+## Abertura do Servidor para Jogadores Externos 
+
 Beleza, seu server ja ta funcionando em modo local. Eu quero abrir de forma Não local, o que fazer? 
 Ai ja engrossa mais o angu.
 
