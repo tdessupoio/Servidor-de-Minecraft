@@ -56,6 +56,7 @@ Conectei o pendrive e inicie a instalação:
 ## Instalando o OpenSSH
 
 Durante a instalação, ativei a opção de instalar o **OpenSSH Server**, pois todas as configurações serão feitas remotamente, a partir do meu PC principal.
+
 ![image](https://github.com/user-attachments/assets/bdc50df8-e036-43a2-8be3-79f895511a28)
 
 Não vamos instalar com nenhuma autenticidade, para instalar ja funcionando.
@@ -88,10 +89,12 @@ O **Crafty Controller** é um excelente programa para gerenciar servidores de Mi
 [Instalação do Crafty](https://docs.craftycontrol.com/pages/getting-started/installation/linux/)
 
 Finalizando os passos, vai dar uma sequência de solicitações para você aceitar.
+
 ![image](https://github.com/user-attachments/assets/50a246ed-5017-4d44-b3a6-d0674164a23d)
 ![image](https://github.com/user-attachments/assets/91579dfe-73fe-4723-847a-321cda023a61)
 ![image](https://github.com/user-attachments/assets/d6a48883-697a-4934-8055-2ff3f3fc0f79)
 ![image](https://github.com/user-attachments/assets/d0515162-b11d-4db0-9864-6d28b7103e84)
+
 Depois de finalizar os passos, executei os comandos necessários para criar o serviço no sistema (assim como um serviço do **Windows**, ele inicializa automaticamente).
 
 Fazemos login como esta especificado no documento:
@@ -103,6 +106,7 @@ https://192.168.0.15:8443
 
 ````
 Agora esta rodando o Crafty Controller
+
 ![image](https://github.com/user-attachments/assets/3ac324a6-9d7b-4300-9441-3c5c387e46b4)
 
 Para descobrir o usuário e senha gerados automaticamente:
@@ -124,6 +128,7 @@ Configura a memoria ram dependendo do seu server
 Agora ele vai baixar as informações do servidor da Microsoft / Mojang
 
 ![image](https://github.com/user-attachments/assets/5407af63-4926-4051-8cfc-ecb7a723fc5c)
+
 Caso apareça erro de Java, instale o Java 21:
 
 ````
